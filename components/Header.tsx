@@ -50,16 +50,6 @@ export default function Header({
               value={searchQuery}
               onChange={(event) => onSearch(event.target.value)}
             />
-            {searchQuery && (
-              <button
-                type="button"
-                className="icon-button"
-                aria-label="Clear search"
-                onClick={() => onSearch("")}
-              >
-                <X size={16} />
-              </button>
-            )}
           </div>
         )}
         <button

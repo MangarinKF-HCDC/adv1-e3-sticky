@@ -193,6 +193,9 @@ p {
 .search-box input::placeholder {
   color: var(--muted);
 }
+.search-box input::-webkit-search-cancel-button {
+  display: none;
+}
 .header-create-button {
   min-height: 36px;
   padding: 8px 12px;
