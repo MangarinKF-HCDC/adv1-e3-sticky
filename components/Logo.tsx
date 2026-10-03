@@ -1,0 +1,32 @@
+export default function Logo({ compact = false }: { compact?: boolean }) {
+  return (
+    <span className="brand">
+      <svg
+        width="44"
+        height="44"
+        viewBox="0 0 128 128"
+        fill="none"
+        aria-hidden="true"
+      >
+        <g transform="rotate(-6 64 64)">
+          <path
+            d="M28 14h72a14 14 0 0 1 14 14v58l-28 28H28a14 14 0 0 1-14-14V28a14 14 0 0 1 14-14Z"
+            fill="#FACC15"
+          />
+          <path d="M86 114V99a13 13 0 0 1 13-13h15Z" fill="#CA8A04" />
+          <path
+            d="M81 40c-6-6-26-8-32 2-9 15 30 12 28 29-2 14-28 16-38 6"
+            stroke="white"
+            strokeWidth="10"
+            strokeLinecap="round"
+          />
+        </g>
+      </svg>
+      {!compact && (
+        <span>
+          sticky<span className="brand-dot">.</span>
+        </span>
+      )}
+    </span>
+  );
+}
